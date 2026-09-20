@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <title>Banjo: Hachiroku.fun</title>
+    <link rel="stylesheet" href="/styles.css?v2">
+</head>
+
+<body class="bodybanjo">
+        <header>
+            <nav class="navbar">
+                <a href="/">Home</a>
+                <a href="/AE86/">AE86</a>
+                <a href="/japanese/">Japanese</a>
+                <a href="/banjo/">Banjo</a>
+            </nav>
+        
+            <h1 class="home1">
+                Banjo at...  <span class="home2">
+                <a href="/">Hachiroku.fun!</a>
+                </span>
+            </h1>
+        </header>
+       
+        <section>
+            <div class="banjoparent">
+                <div class="banjo1">
+                    <div class="banjoheader">
+                        <figure>
+                            <img src="/images/banjo-welcome.png" style="width:700px">
+                        </figure>
+                    </div>
+                    
+                    <div class="banjosampler">
+                        <figure>
+                            <img src="/images/sampler.png"; oncontextmenu="return false;" draggable="false">
+                        </figure>
+                    </div>
+
+                    <div class="banjolink">
+                        <figure>
+                            <a href="./tabs/" title="Tabs">
+                                <img src="/images/banjo-tabs.png">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="banjolink">
+                        <figure>
+                            <a href="./articles/" title="Articles">
+                                <img src="/images/banjo-articles.png">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div  class="banjolink">
+                        <figure>
+                            <a href="./media/" title="Media">
+                                <img src="/images/banjo-media.png">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="banjo2">
+                    <div>
+                        <figure class="banjoportrait">
+                            <img src="/images/framedphoto.png">
+                        </figure>
+                    </div>
+
+                <div class="washboard">
+                    <figure>
+                        <a href="./pastime" title="Thoughts on the Banjo">
+                            <img src="/images/washboard.png">
+                        </a>
+                            
+
+                    </figure>
+                </div>
+
+        </section>
+<script>
+const img = document.querySelector(".washboard img");
+
+let locked = false;
+
+img.addEventListener("mouseenter", () => {
+  if (locked) return;
+
+  locked = true;
+  img.classList.add("swing");
+});
+
+img.addEventListener("animationend", () => {
+  img.classList.remove("swing");
+  locked = false;
+});
+</script>
+</body>
+<footer>
+    <img src="/images/pics1104.gif" alt="工事中です！" style="max-width:100%; height:auto;">
+</footer>
+</html>
